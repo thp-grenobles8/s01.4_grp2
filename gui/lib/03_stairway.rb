@@ -1,5 +1,5 @@
 
-def game (silent=false)
+def game (silent = false)
   position = 0
 
   case

@@ -23,8 +23,8 @@ def half_pyramid
   puts "Bienvenue dans la DEMI PYRAMIDE"
   floors = ask_floors
 
-  for i in 1..floors #pour chaque etage i
-    puts " "*(floors-i)+"#"*i
+  for floor in 1..floors #pour chaque etage i
+    puts " "*(floors-floor)+"#"*floor
   end
 end
 
