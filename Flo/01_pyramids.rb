@@ -1,23 +1,29 @@
 def half_pyramid()
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+print ">>>"
+number_of_step=gets.to_i
+puts "Voici la pyramide : "
+i=0
+	while (i < number_of_step)
+		puts " "*(number_of_step-i-1) + "#"*(i+1)
+		i+=1
+	end
+end
+
+def full_pyramid()
 	puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 	print ">>>"
 	number_of_step=gets.to_i
 	puts "Voici la pyramide : "
 	i=0
 	while (i < number_of_step)
-			puts" "*(number_of_step - i)+ "#"*(i*2+1)
+			puts" "*(number_of_step - i -1)+ "#"*(i*2+1)
 			i+=1
 		end
-	return "end"
 end
 
 
-
-
-
-
-
-def full_pyramid
+def wtf_pyramid
 	number_of_step=0
 	while number_of_step%2==0
 		puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? (choisis un nombre impair)"
@@ -44,8 +50,7 @@ def full_pyramid
 	pyramid = Array.new(number_of_step)
 	i=0
 	while (i < number_of_step/2+1)
-
-		step=" "*(number_of_step - i)+ "#"*(i*2+1)
+		step=" "*(number_of_step - i -1)+ "#"*(i*2+1)
 		pyramid[i]=step
 		pyramid[number_of_step - i -1] = step
 		i+=1
@@ -53,7 +58,6 @@ def full_pyramid
 	for i in 0..number_of_step
 		puts pyramid[i]
 	end
-
 end
 
-half_pyramid
+full_pyramid
