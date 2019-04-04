@@ -4,7 +4,7 @@
 session 8 Grenoble.
 
 
-*Les exercices sont dans le dossier lib !!!* 
+**Les exercices sont dans le dossier lib !!!** 
 
 ## groupe 2
 
