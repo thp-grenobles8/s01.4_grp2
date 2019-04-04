@@ -1,7 +1,10 @@
 
 # exercices en ruby
 
-session 8 Grenoble
+session 8 Grenoble.
+
+
+*Les exercices sont dans le dossier lib !!!* 
 
 ## groupe 2
 
